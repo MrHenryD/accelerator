@@ -24,14 +24,14 @@ jobs:
     - name: Change Directory
       run: cd resources/us-west-2/dev
 
-    # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
-    - name: Terraform Init
-      run: terraform init
+    # List files in directory
+    - name: List files
+      run: ls 
 
-    # Checks that all Terraform configuration files adhere to a canonical format
-    - name: Terraform Format
-      run: terraform fmt -check
-
-    # Generates an execution plan for Terraform
-    - name: Terraform Plan
-      run: terraform plan      
+    # Navigate to directory and generates an execute plan
+  - name: Terraform plan
+      run: |
+        cd resources/us-west-2/dev
+        terraform init
+        terraform fmt -check
+        terraform plan
