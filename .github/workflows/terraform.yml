@@ -29,7 +29,7 @@ jobs:
       run: ls 
 
     # Navigate to directory and generates an execute plan
-  - name: Terraform plan
+    - name: Terraform plan
       run: |
         cd resources/us-west-2/dev
         terraform init
