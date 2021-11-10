@@ -34,4 +34,4 @@ jobs:
         cd resources/us-west-2/dev
         terraform init
         terraform fmt -check
-        terraform plan
+        terraform validate
