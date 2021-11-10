@@ -14,19 +14,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
+    # Install Terraform CLI
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
       with:
         terraform_version: 0.14.2
-
-    # Navigate to directory
-    - name: Change Directory
-      run: cd resources/us-west-2/dev
-
-    # List files in directory
-    - name: List files
-      run: ls 
 
     # Navigate to directory and generates an execute plan
     - name: Terraform plan
