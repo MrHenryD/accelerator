@@ -44,4 +44,5 @@ module "data_lake" {
 | Name | Description |
 |------|-------------|
 | bucket_arn | Bucket ARN |
+| bucket_id | Name of the Bucket |
 <br />
