@@ -1,6 +1,6 @@
 module "redshift" {
   source  = "terraform-aws-modules/redshift/aws"
-  version = "~> 3.0"
+  version = "3.4.0"
 
   cluster_identifier      = var.name
   cluster_node_type       = var.node_type
