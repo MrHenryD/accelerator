@@ -1,4 +1,4 @@
-# aws-big-data
+# accelerator
 
 # About this Project
 Example multi-environment cloud data stack.
